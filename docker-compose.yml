@@ -1,0 +1,11 @@
+version: '3'
+services:
+    server:
+        build: .
+        container_name: server
+        ports:
+            - "8085:8085"
+        environment:
+            - "ROS_HOSTNAME=server"
+        command: roslaunch roswww start_bridge.launch
+
