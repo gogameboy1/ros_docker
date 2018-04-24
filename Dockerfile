@@ -4,7 +4,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     ros-indigo-ros-tutorials \
     ros-indigo-common-tutorials \
     vim \
-    ros-indigo-roswww \
+    ros-indigo-catkin \
     && rm -rf /var/lib/apt/lists/
 
 RUN mkdir -p ~/catkin_ws/src
